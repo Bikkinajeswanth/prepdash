@@ -1,9 +1,10 @@
 [build]
   base = "client"
   command = "npm run build"
-  publish = "client/dist"
+  publish = "dist"   # ✅ changed from client/dist to dist
 
 [build.environment]
+  NODE_VERSION = "18"
   VITE_API_BASE = "https://prepdash.onrender.com/api"
 
 [[redirects]]
